@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Style Sheet -->
+    <link rel="stylesheet" href="style.css">
+    <title>Pioneer Bank</title>
+</head>
+<body>
+    
+    <section class="container" id="login">
+        <h6>Welcome to Pioneer Bank</h6>
+        <div class="form-control p-4" id="login-form">
+            <h2>Login</h2>
+            <input class="form-control mb-2" id="email" type="email" placeholder="Email">
+            <input class="form-control mb-2" id="password" type="password" placeholder="Password">
+            <button class="btn btn-success" id="login-btn">Enter Here</button>
+        </div>
+    </section>
+
+    <section class="container p-5" id="transaction">
+        <div class="row transaction-box">
+            <div class="col-lg-4 mb-2">
+                <div class="m-3 bg-success h-100 rounded">
+                    <h3>Deposit</h3>
+                    <h1>$<span id="currentDeposit">00</span></h1>
+                </div>
+            </div>
+            <div class="col-lg-4 mb-2">
+                <div class="m-3 bg-danger h-100 rounded">
+                    <h3>Withdraw</h3>
+                    <h1>$<span id="currentWithdraw">00</span></h1>
+                </div>
+            </div>
+            <div class="col-lg-4 mb-2">
+                <div class="m-3 bg-primary h-100 rounded">
+                    <h3>Balance</h3>
+                    <h1>$<span id="currentBalance">1240</span></h1>
+                </div>
+            </div>
+        </div>
+
+        <div class="row mt-5">
+            <div class="col-lg-6 mb-2">
+                <div class="form-control p-4" id="login-form">
+                    <h2>Deposit</h2>
+                    <input id="addedDeposit" class="form-control mb-2" type="number" placeholder="Enter deposit amount">
+                    <button id="deposit-btn" class="btn btn-success">Deposit</button>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="form-control p-4" id="login-form">
+                    <h2>Withdraw</h2>
+                    <input id="addedWithdraw" class="form-control mb-2" type="number" placeholder="Enter withdraw amount">
+                    <button id="withdraw-btn" class="btn btn-success">Withdraw</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+        
+        
+    
+    
+
+
+
+    <!-- javaScript -->
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
